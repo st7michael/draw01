@@ -18,9 +18,10 @@
     //[self drawArc:context];
     //[self drawCurve:context];
   //  [self drawText:context];
-
-    [self star:context];
+    [self drawPic:context];
+   // [self star:context];
 }
+
 - (void)drawLine:(CGContextRef)context{
     
     
@@ -42,7 +43,6 @@
     CGPathRelease(path);
 }
 
-
 - (void)drawLine2:(CGContextRef)context{
     CGPoint p1 = {50,50};
     CGPoint p2 = {50,222};
@@ -57,7 +57,6 @@
     CGContextDrawPath(context, kCGPathEOFillStroke);
     
 }
-
 
 - (void)drawRectShape:(CGContextRef)context{
     CGRect rect = CGRectMake(100, 100, 60, 60);
@@ -100,11 +99,7 @@
     [string drawInRect:rect withFont:[UIFont systemFontOfSize:18] lineBreakMode:NSLineBreakByCharWrapping alignment:NSTextAlignmentLeft];
 }
 
-
-- (void)star:(CGContextRef )context{
-    
-    
-    
+- (void)star:(CGContextRef)context{
     UIBezierPath* starPath = [UIBezierPath bezierPath];
     [starPath moveToPoint: CGPointMake(45.5, 41.5)];
     [starPath addLineToPoint: CGPointMake(52.2, 60.03)];
@@ -122,8 +117,24 @@
     [[UIColor blackColor] setStroke];
     starPath.lineWidth = 1;
     [starPath stroke];
+}
+
+- (void)drawPic:(CGContextRef)context{
+    UIImage *image = [UIImage imageNamed:@"1.jpg"];
+    
+    CGContextSaveGState(context);
+    
+    CGContextRotateCTM(context, M_PI);
+    CGContextScaleCTM(context, -1, 1);
+    CGContextTranslateCTM(context, 0, -100);
+    CGContextDrawImage(context, CGRectMake(0, 0, 100, 100), image.CGImage);
+    
+    CGContextRestoreGState(context);
+    
+    [self drawLine:context];
     
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

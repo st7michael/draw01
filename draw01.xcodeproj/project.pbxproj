@@ -15,6 +15,7 @@
 		41443E321B709FCA006F8827 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41443E301B709FCA006F8827 /* LaunchScreen.xib */; };
 		41443E3E1B709FCA006F8827 /* draw01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41443E3D1B709FCA006F8827 /* draw01Tests.m */; };
 		41443E491B709FDB006F8827 /* myView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41443E481B709FDB006F8827 /* myView.m */; };
+		417721051B71A1B100F45DA9 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417721041B71A1B100F45DA9 /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		41443E3D1B709FCA006F8827 /* draw01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = draw01Tests.m; sourceTree = "<group>"; };
 		41443E471B709FDB006F8827 /* myView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myView.h; sourceTree = "<group>"; };
 		41443E481B709FDB006F8827 /* myView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myView.m; sourceTree = "<group>"; };
+		417721041B71A1B100F45DA9 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				41443E291B709FCA006F8827 /* ViewController.m */,
 				41443E471B709FDB006F8827 /* myView.h */,
 				41443E481B709FDB006F8827 /* myView.m */,
+				417721041B71A1B100F45DA9 /* 1.jpg */,
 				41443E2B1B709FCA006F8827 /* Main.storyboard */,
 				41443E2E1B709FCA006F8827 /* Images.xcassets */,
 				41443E301B709FCA006F8827 /* LaunchScreen.xib */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41443E2D1B709FCA006F8827 /* Main.storyboard in Resources */,
+				417721051B71A1B100F45DA9 /* 1.jpg in Resources */,
 				41443E321B709FCA006F8827 /* LaunchScreen.xib in Resources */,
 				41443E2F1B709FCA006F8827 /* Images.xcassets in Resources */,
 			);
@@ -424,6 +428,7 @@
 				41443E431B709FCA006F8827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41443E441B709FCA006F8827 /* Build configuration list for PBXNativeTarget "draw01Tests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +437,7 @@
 				41443E461B709FCA006F8827 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
